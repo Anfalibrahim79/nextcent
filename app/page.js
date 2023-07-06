@@ -30,13 +30,13 @@ export default function Home() {
           <h2 className='text-4xl font-semibold leading-[44px]'>Our Clients</h2>
           <p className='text-base font-normal leading-6 text-netral-D_Grey'>We have been working with some Fortune 500+ clients</p>
           <div className='w-[1152px] h-[98px] flex justify-between items-center'>
-            <Image src={'/nLogo1.png'} width={40} height={40} alt='logo' />
-            <Image src={'/nLogo2.png'} width={40} height={28} alt='logo' />
+            <Image src={'/logo1.svg'} width={40} height={40} alt='logo' />
+            {/* <Image src={'/nLogo2.png'} width={40} height={28} alt='logo' />
             <Image src={'/nLogo3.png'} width={55} height={30} alt='logo' />
             <Image src={'/nLogo4.png'} width={47} height={29} alt='logo' />
             <Image src={'/nLogo5.png'} width={41} height={27} alt='logo' />
             <Image src={'/nLogo6.png'} width={52} height={20} alt='logo' />
-            <Image src={'/nLogo7.png'} width={55} height={30} alt='logo' />
+            <Image src={'/nLogo7.png'} width={55} height={30} alt='logo' /> */}
           </div>
         </div>
         {/*Community */}
