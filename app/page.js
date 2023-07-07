@@ -2,6 +2,7 @@ import Button from '@/components/button/Button'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
+import { BiLogoInstagram, BiLogoTwitter, BiLogoYoutube, BiBasketball, BiLogoTelegram } from 'react-icons/bi'
 
 export default function Home() {
   return (
@@ -173,20 +174,136 @@ export default function Home() {
           </div>
         </div>
         {/*Community */}
-        {/* <div className='w-full'>
+        <div className='w-full'>
           <div className='flex flex-col justify-center items-center text-center'>
             <h2 className='text-4xl font-semibold leading-[44px] text-netral-D_Grey'>Caring is the new marketing</h2>
             <p className='w-[628px] text-base font-normal leading-6 text-netral-grey'>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&apos;s joining the community, read about how our community are increasing their membership income and lot&apos;s more.​</p>
           </div>
           <div className='px-36'>
-            <div className='flex flex-col items-center'>
-              <Image src={'/image-18.png'} width={368} height={286} alt='community' className='absolute' />
-              <div className='p-4 w-[317px] bg-teal-300 relative -bottom-[96px]'>
-
+            <div className='flex justify-between'>
+              <div className='flex flex-col items-center h-[286px] mt-4'>
+                <Image src={'/image-18.png'} width={368} height={286} alt='community' />
+                <div className='p-4 w-[317px] bg-netral-silver top-[-96px] relative rounded-lg drop-shadow-8px'>
+                  <div className='flex flex-col items-center text-center gap-4'>
+                    <h4 className='text-xl font-semibold leading-7 text-netral-grey'>
+                      Creating Streamlined Safeguarding Processes with OneRen
+                    </h4>
+                    <div className='p-2 text-xl font-semibold leading-7 text-primary flex gap-2 items-center'>
+                      <Link href={'/'}>
+                        <h4>
+                          Readmore
+                        </h4>
+                      </Link>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-col items-center h-[286px] mt-4'>
+                <Image src={'/image-19.png'} width={368} height={286} alt='community' />
+                <div className='p-4 w-[317px] bg-netral-silver top-[-96px] relative rounded-lg drop-shadow-8px'>
+                  <div className='flex flex-col items-center text-center gap-4'>
+                    <h4 className='text-xl font-semibold leading-7 text-netral-grey'>
+                      What are your safeguarding responsibilities and how can you manage them?
+                    </h4>
+                    <div className='p-2 text-xl font-semibold leading-7 text-primary flex gap-2 items-center'>
+                      <Link href={'/'}>
+                        <h4>
+                          Readmore
+                        </h4>
+                      </Link>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='flex flex-col items-center h-[286px] mt-4'>
+                <Image src={'/image-20.png'} width={368} height={286} alt='community' />
+                <div className='p-4 w-[317px] bg-netral-silver top-[-96px] relative rounded-lg drop-shadow-8px'>
+                  <div className='flex flex-col items-center text-center gap-4'>
+                    <h4 className='text-xl font-semibold leading-7 text-netral-grey'>
+                      Revamping the Membership Model with Triathlon Australia
+                    </h4>
+                    <div className='p-2 text-xl font-semibold leading-7 text-primary flex gap-2 items-center'>
+                      <Link href={'/'}>
+                        <h4>
+                          Readmore
+                        </h4>
+                      </Link>
+                      <BsArrowRight />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
+        {/*Footer */}
+        <div className='w-full py-8 mt-44 flex flex-col items-center bg-netral-silver gap-8'>
+          <div className='text-center w-[887px]'>
+            <h1 className='text-[64px] font-semibold leading-[76px] text-netral-black'>
+              Pellentesque suscipit fringilla libero eu.
+            </h1>
+          </div>
+          <Button type='primary' size='medium'>
+            <div className='flex items-center gap-2' >
+              <Link href={'/'}>Get a Demo </Link>
+              <BsArrowRight />
+            </div>
+          </Button>
+        </div>
+        <footer className='w-full bg-netral-black py-16 px-[165px]'>
+          <div className='flex justify-between'>
+            <div className='space-y-10'>
+              <Image src={'/logofooter.svg'} width={191} height={29} alt='logo' />
+              <div className='space-y-2'>
+                <p className='text-sm font-normal leading-5 text-netral-silver'>Copyright © 2020 Nexcent ltd.</p>
+                <p className='text-sm font-normal leading-5 text-netral-silver'>All rights reserved</p>
+              </div>
+              <div className='flex gap-2'>
+                <div className='w-8 h-8 bg-[#3c474c] text-white rounded-full flex items-center justify-center text-xl'>
+                  <BiLogoInstagram />
+                </div>
+                <div className='w-8 h-8 bg-[#3c474c] text-white rounded-full flex items-center justify-center text-xl'>
+                  <BiBasketball />
+                </div>
+                <div className='w-8 h-8 bg-[#3c474c] text-white rounded-full flex items-center justify-center text-xl'>
+                  <BiLogoTwitter />
+                </div>
+                <div className='w-8 h-8 bg-[#3c474c] text-white rounded-full flex items-center justify-center text-xl'>
+                  <BiLogoYoutube />
+                </div>
+              </div>
+            </div>
+            <div className='space-y-6'>
+              <h4 className='text-xl font-semibold leading-7 text-netral-white'>Company</h4>
+              <ul className='text-sm font-normal leading-5 text-netral-silver space-y-3'>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <li>Pricing</li>
+                <li>Testimonials</li>
+              </ul>
+            </div>
+            <div className='space-y-6'>
+              <h4 className='text-xl font-semibold leading-7 text-netral-white'>Support</h4>
+              <ul className='text-sm font-normal leading-5 text-netral-silver space-y-3'>
+                <li>Help center</li>
+                <li>Terms of service</li>
+                <li>Legal</li>
+                <li>Privacy policy</li>
+                <li>Status</li>
+              </ul>
+            </div>
+            <div className='space-y-6'>
+              <h4 className='text-xl font-semibold leading-7 text-netral-white'>Stay up to date</h4>
+              <div className='relative flex items-center'>
+                <input id='email' placeholder='Your email' className='rounded-lg p-4 bg-[#515b60] text-white placeholder:text-netral-silver' />
+                <i className='absolute right-2'><BiLogoTelegram className='text-lg text-netral-silver cursor-pointer' /></i>
+              </div>
+            </div>
+          </div>
+        </footer>
       </section>
     </>
   )
